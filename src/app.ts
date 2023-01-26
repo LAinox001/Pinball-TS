@@ -1,7 +1,4 @@
 import "phaser";
-import {WelcomeScene} from "./tutorial/welcomeScene";
-import {GameScene} from "./tutorial/gameScene";
-import {ScoreScene} from "./tutorial/scoreScene";
 import {PinballScene} from "./pinball/pinballScene";
 
 const config: GameConfig = {
