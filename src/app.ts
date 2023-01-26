@@ -1,17 +1,18 @@
 import "phaser";
 import {PinballScene} from "./pinball/pinballScene";
+import GameConfig = Phaser.Types.Core.GameConfig;
 
 const config: GameConfig = {
     title: "Starfall",
-    width: 800,
-    height: 600,
+    width: 2000,
+    height: 1200,
     parent: "game",
     scene: [PinballScene],
     physics: {
-        default: "arcade",
-        arcade: {
-            gravity: {y: 981},
-            debug: false
+        default: 'matter',
+        matter: {
+            debug: true,
+            gravity: {y: 0.981},
         }
     },
     backgroundColor: "#18216D"
